@@ -1,0 +1,64 @@
+body {
+  margin: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(https://forums.unrealengine.com/filedata/fetch?id=1113441&d=1470732920) no-repeat center center fixed ;  
+  background-size: cover;
+  max-width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  height: 350px;
+  max-height: 100%;
+    
+}
+
+a {
+  color: #00B7FF;
+}
+
+#commentForm{
+    border: 5px solid darkblue;
+    opacity: 0.6;
+    background-color: #ffffff;
+    margin: auto;
+    padding:25px;
+    max-width: 33%;
+    width:300px;
+    align-content: center;
+    text-align: center;
+}
+
+#commentForm li{
+    text-align: left;
+}
+
+#json{
+    border: 5px solid darkblue;
+    opacity: 0.6;
+    background-color: #ffffff;
+     margin: auto;
+    padding:25px;
+    max-width: 33%;
+    width:300px;
+    align-content: center;
+    text-align: center;
+}
+
+#json li{
+    text-align: left;
+}
+
+#comments{
+    border: 5px solid darkblue;
+    opacity: 0.6;
+    background-color: #ffffff;
+     margin: auto;
+    padding:25px;
+    max-width: 33%;
+    width:300px;
+    align-content: center;
+    text-align: center;
+}
+
+#comments li{
+    text-align: left;
+}
