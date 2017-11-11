@@ -1,64 +1,61 @@
 body {
-  margin: auto;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: auto;   
+  font-family: 'Montserrat', sans-serif;
   background: url(https://forums.unrealengine.com/filedata/fetch?id=1113441&d=1470732920) no-repeat center center fixed ;  
   background-size: cover;
   max-width: 100%;
-  display:flex;
-  flex-wrap: wrap;
   height: 350px;
   max-height: 100%;
-    
+  padding: 50px;       
 }
 
 a {
   color: #00B7FF;
 }
 
-#commentForm{
-    border: 5px solid darkblue;
-    opacity: 0.6;
-    background-color: #ffffff;
-    margin: auto;
-    padding:25px;
-    max-width: 33%;
-    width:300px;
-    align-content: center;
-    text-align: center;
-}
-
-#commentForm li{
+.button-container{
+    width:35%;
+    margin-bottom:10px;
+    float:left; 
+    display: inline-block;
     text-align: left;
 }
 
-#json{
-    border: 5px solid darkblue;
+.button-container form{
+    font-size: 30px;
+    text-align: left;
+    margin: 20px;
+}
+
+.button-container form input{
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+}
+
+.button-container button{
+    margin:20px;
+    border-radius: 12px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.button-container button:hover{
+   box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.response-container{
     opacity: 0.6;
     background-color: #ffffff;
-     margin: auto;
-    padding:25px;
-    max-width: 33%;
-    width:300px;
-    align-content: center;
-    text-align: center;
+    width:65%;
+    /* float:left; */
+    display:inline-block;
+    margin-bottom:5px;
 }
 
-#json li{
-    text-align: left;
-}
 
-#comments{
-    border: 5px solid darkblue;
-    opacity: 0.6;
-    background-color: #ffffff;
-     margin: auto;
-    padding:25px;
-    max-width: 33%;
-    width:300px;
-    align-content: center;
-    text-align: center;
-}
-
-#comments li{
-    text-align: left;
-}
+@media screen and (max-width: 692px)   {
+    .button-container, .response-container{
+        width:100%;   
+        float:none;
+    }

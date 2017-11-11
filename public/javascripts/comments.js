@@ -14,7 +14,7 @@ $(document).ready(function(){
       data: jobj,
       contentType: "application/json; charset=utf-8",
       success: function(data,textStatus) {
-        $("#done").html(textStatus);
+        $("#done").html("Comment post status: " + textStatus);
       }
    })//End Ajax
   });//End post comments button click function
@@ -23,7 +23,7 @@ $(document).ready(function(){
   $("#getComments").click(function() {
   //console.log('Get Comments Button Worked');
     $.getJSON('comment', function(data) {
-      console.log(data);
+     // console.log(data);
       var everything = "<ul>";
       for(var comment in data) {
         com = data[comment];
@@ -45,8 +45,13 @@ $(document).ready(function(){
      $.ajax({
        url:url,
        type: "DELETE",
-       success: console.log("delete function worked")
-    });
+       success: function(){
+         // console.log("delete function worked")
+         $("#json").empty();
+         $("#done").empty();
+         $("#comments").empty();
+         }
+       });//End ajax
   });//End delete all button click function 
 
 });//End of document.ready
